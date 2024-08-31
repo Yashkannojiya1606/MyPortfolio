@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Yashwant" />
+    <meta property="og:description" content="Portfolio Website of Yashwant" />
+    
+    <meta property="og:type" content="website" />
+
+    <title>Yashwant Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/cb31bfb0c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Yashwant.png" class="logo" alt="" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Yashwant</span>
+                    <br><span>Kannojiya</span>
+                    
+                    <br />from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------About Section----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/rohituser2.jpg" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify; padding-top: 20px;">
+                         I share my expertise in coding and software
+                        development, offering insights
+                        and tutorials to help fellow enthusiasts navigate the ever-evolving world of technology. With a
+                        background as a
+                        professional full-stack developer in the industry, I bring real-world experience to my engaging
+                        content. Committed to
+                        continuous learning and fostering a community of learners, I aim to make complex coding concepts
+                        accessible and
+                        enjoyable. Join me on this journey of exploration and mastery in the dynamic field of software
+                        development!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br />c++, Java, JavaScript, TypeScript, SQL</li>
+                            <li><span>FRONTEND TECHNOLOGIES</span><br /> ReactJS, Redux, JavaScript,
+                                 jQuery, Bootstrap, HTML, CSS</li>
+                            <li><span>BACKEND TECHNOLOGIES</span><br />Javascript, NodeJS, ExpressJS, Java,
+                                API</li>
+                            <li><span>DATABASE</span><br />MySQL, MongoDB,  MS SQL Server</li>
+                            <li><span>DEVELOPER TOOLS</span><br />Git, GitHub, GitLab, Postman</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nova Nectar Services Pvt. Ltd., Dehradun</span><br />Frontend Developer (Mar 2024 - Present)
+                            </li>
+                            <li><span>Numeric Infosystem Pvt. Ltd., Gwalior</span><br />Software Engineer (June 2023 - Feb 2024)
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>M.C.A</span><br />Rustamji Institute of Technology Gwalior [M.P]<br> 2021-2023
+                            </li>
+                            <li><span>B.C.A</span><br />Jiwaji University Gwalior [M.P]<br> 2018-2021
+                            </li>
+                            <li><span>SENIOR SECONDARY</span><br />Madhya Pradesh Board of Secondary Education (M.P Board) <br> 2017-2018
+                            </li>
+                            <li><span>HIGHER SECONDARY</span><br /> Madhya Pradesh Board of Secondary Education (M.P Board) <br> 2014-2015</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p style="text-align: justify;">
+                        I craft visually stunning and highly interactive front-end designs that captivate and engage users. Specializing in responsive web design,
+                         I ensure that your website not only looks great on any device but also provides a seamless user experience. Leveraging cutting-edge technologies like React, HTML5, CSS3, and JavaScript, 
+                        I build intuitive user interfaces that are both aesthetically pleasing and functional, tailored to meet your unique business needs.
+                    </p>
+                    <a target="_blank" style="font-size: 15px; color: #000000;"
+                        href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">Learn
+                        more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Back-End Development</h2>
+                    <p style="text-align: justify;">
+                        My back-end development expertise guarantees that your website or application operates smoothly and efficiently.
+                         I create scalable and secure server-side applications using Node.js and Express, ensuring that your digital platform has the robust functionality
+                          it needs to succeed. From setting up databases to developing APIs, I focus on delivering high-performance solutions that integrate seamlessly with your front-end, 
+                          providing a reliable and dynamic experience for your users
+                    </p>
+                    <a target="_blank" style="font-size: 15px; color: #000000;"
+                        href="https://www.geeksforgeeks.org/backend-development/#what-is-backend-development-">Learn
+                        more</a>
+                </div>
+                <div>
+                <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p style="text-align: justify;">
+                        I offer comprehensive database management services that keep your data well-organized, accessible, and secure. 
+                        With expertise in both NoSQL databases like MongoDB and relational databases such as MySQL, I design and manage data storage solutions that are efficient and scalable.
+                         Whether you're handling small datasets or complex databases,
+                         I ensure your data is structured, optimized, and readily available to support your application's operations and drive informed business decisions.
+                    </p>
+                    <a target="_blank" style="font-size: 15px; color: #000000;"
+                        href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/">Learn
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/yashwork1.png" alt="" />
+                    <img src="images/yashwork2.png" alt="" />
+                    <img src="images/yashwork3.png" alt="" />
+                    <div class="layer">
+                        <h3>HealthHub Website</h3>
+                        <p>
+                        <ul>
+                            <li style="padding-bottom: 5px;">Built a Complete Healthcare E-commerce Website with Frontend in HTML, CSS, JavaScript, and React, and Backend in JavaScript and Node.js</li>
+                            <li style="padding-bottom: 5px;">Integrated with various payment and delivery services.</li>
+                            <li style="padding-bottom: 5px;">There are 6 Modules: Product Catalog, Cart Management, Checkout & Payment, Delivery Options, User Authentication, and Order Tracking.</li>
+                        </ul>
+                        </p>
+                        <a style="text-align: center;" target="_blank" href=""><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/yashwork4.png" alt="" />
+                    <img src="images/yashwork5.png" alt="" />
+                    <img src="images/yashwork6.png" alt="" />
+                    <div class="layer">
+                        <h3>RoboBot</h3>
+                        <p>
+                        <ul>
+                            <li style="padding-bottom: 5px;">Built a Complete Job Portal Website with Frontend in HTML, CSS, JavaScript,jQuery,React and Backend in JavaScript and Node.js..</li>
+                            <li style="padding-bottom: 5px;"> Integrated with various job listing and application services.
+                               </li>
+                            <li style="padding-bottom: 5px;">There are 6 Modules: Job Listings, Job Search, User Authentication, Job Posting (for recruiters), User Profiles, and Application Tracking (for candidates).
+                            </li>
+                        </ul>
+                        </p>
+                        <a style="text-align: center;" href=" " target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/yashwork9.png" alt="" />
+                    <img src="images/yashwork8.png" alt="" />
+                    <img src="images/yashwork7.png" alt="" />
+                    <div class="layer">
+                        <h3>E-Store Admin Panel</h3>
+                        <p>
+                        <ul>
+                            <li style="padding-bottom: 5px;">Developed a responsive panel for electronic products with features for editing, registering, and managing packaging, categories, and varieties..</li>
+                            <li style="padding-bottom: 5px;">Implemented routes for various management tasks using Node.js and Express.</li>
+                            <li style="padding-bottom: 5px;">Utilized MySQL for data storage, and designed the UI with HTML, CSS, Bootstrap, and JavaScript for a seamless experience.</li>
+                        </ul>
+                        </p>
+                        <a target="_blank" style="text-align: center;"
+                            href=""><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>yashwantkannojiya8@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6267791491</p>
+                    <div class="social-icons">
+                       
+                        <a target="_blank" href="https://www.instagram.com/_human_being_214/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/yashwant-kannojiya-200016yk"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/Yashkannojiya1606"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href=""><i
+                                class="fab fa-facebook"></i></a>
+                        <a target="_blank" href=""><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                    <a href="javascript:void(0)" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 © Yashwant Kannojiya. All rights reserved. Made with <i class="fas fa-heart"></i> by Yashwant</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSawvairRZtoaXaQwgEI8kkQAevLa3nIGHgCPuZ0r6bJTCThE0KGHtCokGZ1Lva7e-Bw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 4000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
